@@ -47,4 +47,9 @@ public class LinkedList {
 			newNode.next = tempNode;
 		}
 	}
+	public MyNode delete() {
+		MyNode tempNode = this.head;
+		this.head = head.next;
+		return tempNode;		
+	}
 }
