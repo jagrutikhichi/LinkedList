@@ -18,6 +18,13 @@ public class LinkedList {
 			tempNode.next = newNode;
 		}
 	}
+	public void add(int data) {
+		MyNode newNode = new MyNode();
+		newNode.data = data;
+		newNode.next = null;
+		newNode.next = head;
+		head = newNode;
+	}
 	public void print() {
 		MyNode tempNode = head;
 		while(tempNode.next != null) {
