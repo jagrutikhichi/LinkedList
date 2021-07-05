@@ -2,6 +2,7 @@ package com.bridgelabs;
 
 public class LinkedList {
 	MyNode head;
+	//Append methog
 	public void append(int data) {
 		
 		MyNode newNode = new MyNode();
@@ -18,6 +19,7 @@ public class LinkedList {
 			tempNode.next = newNode;
 		}
 	}
+	//Add method 
 	public void add(int data) {
 		MyNode newNode = new MyNode();
 		newNode.data = data;
@@ -34,6 +36,7 @@ public class LinkedList {
 		}
 		System.out.println(tempNode.data);
 	}
+	//inserting data in linked list
 	public void insert(int data) {
 		MyNode newNode = new MyNode();
 		newNode.data = data;
@@ -47,6 +50,7 @@ public class LinkedList {
 			newNode.next = tempNode;
 		}
 	}
+	//Deteting top element of list 
 	public MyNode delete() {
 		MyNode tempNode = this.head;
 		this.head = head.next;
